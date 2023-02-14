@@ -1,0 +1,40 @@
+#!/bin/bash
+
+install() {
+  echo " ===== Run mvn clean install command ===== $2"
+  if [ "$2" == "prod" ]; then
+    mvn clean package -o -Dmaven.test.skip=true -P$2
+  else
+    mvn clean package -o -Dmaven.test.skip=true
+  fi
+}
+
+package() {
+  echo " ===== Run mvn clean package command ===== $2"
+  if [ "$2" == "prod" ]; then
+    mvn clean package -Dmaven.test.skip=true -P$2
+  else
+    mvn clean package -Dmaven.test.skip=true
+  fi
+}
+
+run() {
+  echo " mvn spring-boot:run -Dspring-boot.run.profiles==$2"
+  if [ "$2" == "prod" ]; then
+    mvn spring-boot:run -Dspring-boot.run.profiles=prod
+  else
+    mvn spring-boot:run -Dspring-boot.run.profiles=dev
+  fi
+}
+
+case "$1" in
+install)
+  install "$@"
+  ;;
+package)
+  package "$@"
+  ;;
+run)
+  run "$@"
+  ;;
+esac
