@@ -132,6 +132,12 @@ int main() {
 
     mediator.registerNode(node5);
     node1->sendMsgTo(mediator,node5,"node5 welcome");
+	
+	delete node1;
+	delete node2;
+	delete node3;
+	delete node4;
+	delete node5;
 
     return 0;
 }
