@@ -108,7 +108,7 @@ void Mediator::sendTo(const NodeInterface *sender,
                       const string &message) const {
     for(const auto& n:getNodes())
         if(n == receiver)
-            sender->receiveMessage(receiver,message);
+            sender->receiveMsgFrom(receiver,message);
 }
 
 int main() {
