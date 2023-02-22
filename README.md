@@ -39,12 +39,37 @@ Contents
 
 3.1	Chain of Responsibility
 
-3.2	Observer
+3.2	Command
+
+3.3	Interpreter
+
+3.4	Iterator
+
+3.5	Mediator
+
+3.6	Memento
+
+3.7	Observer
+
+3.8	State
+
+3.9	Strategy
+
+3.10	Template Method
+
+3.11	Visitor
+
+3.12	Model-View-Controller (MVC)
+
 
 
 Video Clips are on:
+
 www.youtube.com/@peacism_live
+
 https://t.me/iruit_ir
+
 www.instagram.com/peacism_live
+
 www.linkedin.com/in/mohammad-reza-mousavi
 
