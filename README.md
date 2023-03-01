@@ -41,9 +41,9 @@ Contents
 
 3.2 Command
 
-3.3 Interpreter
+3.3 Interpreter    ---> not implemented
 
-3.4 Iterator
+3.4 Iterator       ---> not implemented
 
 3.5 Mediator
 
